@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
+
+*,
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff5eb;
+}
+
+/* Navbar */
+nav {
+  background-color: #fff5eb;
+  /* height: 15vh; */
+}
+nav .container .collapse ul li .nav-link:hover {
+  color: #ff7f2a !important;
+}
+
+nav .container .collapse .btn-signin {
+  padding: 8px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+nav .container .collapse .btn-signin:hover {
+  background-color: #ff7f2a;
+  border: none;
+}
+
+/* Banner */
+.container-banner {
+  margin-top: 120px;
+}
+
+.container-banner .row .text-banner {
+  margin-top: 50px;
+}
+
+.container-banner .row .upi {
+  letter-spacing: 7px;
+}
+
+.container-banner .row .desc {
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.container-banner .row .btn-banner {
+  margin-top: 80px;
+}
+
+.container-banner .row .btn-banner .kenali {
+  background-color: #ff7f2a;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 30px;
+}
+
+.container-banner .row .btn-banner .kenali:hover {
+  opacity: 0.8;
+}
+
+.container-banner .row .btn-banner .gabung {
+  border: none;
+  padding: 8px 40px;
+  border-radius: 30px;
+}
+.container-banner .row .btn-banner .gabung:hover {
+  opacity: 0.8;
+}
+
+/* WHY */
+.why {
+  margin-top: 170px;
+}
+
+.why .row .col-lg-5 {
+  background-color: #ff7f2a;
+}
+
+.why .row .card {
+  border: none;
+  border-radius: 20px;
+}
+
+.devisi {
+  margin-left: 10px;
+}
+
+/* WHO */
+.anggota {
+  min-height: 400px;
+}
+
+/* BEST MOMENT */
+.best-moment {
+  min-height: 100px;
+}
+.best-moment-first {
+  min-height: 400px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 200px;
+}
+.footer .col-footer {
+  min-height: 200px;
+  /* background-color: #ff7f2a; */
+}
+
+.footer .logo {
+  margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    width: 15px !important;
+  }
+  .container-banner {
+    margin-top: 60px;
+  }
+
+  .container .text-banner h2 {
+    font-size: 26px !important;
+    margin-left: 10px;
+  }
+
+  .container-banner .row .upi {
+    letter-spacing: 0;
+    margin-left: 10px;
+  }
+
+  .container-banner .row .desc {
+    margin-left: 10px;
+  }
+
+  .container-banner .row .btn-banner {
+    margin-top: 30px;
+  }
+
+  .container-banner .row .btn-banner .kenali {
+    padding: 8px 25px;
+    margin-left: 10px;
+  }
+
+  .container-banner .row .btn-banner .gabung {
+    padding: 8px 25px;
+  }
+
+  .container-banner .row .banner-img img {
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+}
