@@ -4,10 +4,20 @@
 a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #fff5eb;
+}
+section {
+  min-height: 100vh;
+  margin-top: 8em;
+  /* background-color: #ff7f2a; */
+}
+.card {
+  border: none;
+  border-radius: 1em;
 }
 
 /* Navbar */
@@ -20,7 +30,7 @@ nav .container .collapse ul li .nav-link:hover {
 }
 
 nav .container .collapse .btn-signin {
-  padding: 8px 40px;
+  padding: 10px 45px;
   border-radius: 30px;
   transition: 0.5s;
 }
@@ -31,129 +41,135 @@ nav .container .collapse .btn-signin:hover {
 }
 
 /* Banner */
-.container-banner {
-  margin-top: 120px;
+
+.kata {
+  margin-top: 4em;
+}
+.upi {
+  letter-spacing: 0.25em;
 }
 
-.container-banner .row .text-banner {
-  margin-top: 50px;
-}
-
-.container-banner .row .upi {
-  letter-spacing: 7px;
-}
-
-.container-banner .row .desc {
-  margin-top: 30px;
-  font-weight: 300;
-}
-
-.container-banner .row .btn-banner {
-  margin-top: 80px;
-}
-
-.container-banner .row .btn-banner .kenali {
-  background-color: #ff7f2a;
-  border: none;
-  padding: 8px 40px;
-  border-radius: 30px;
-}
-
-.container-banner .row .btn-banner .kenali:hover {
-  opacity: 0.8;
-}
-
-.container-banner .row .btn-banner .gabung {
-  border: none;
-  padding: 8px 40px;
-  border-radius: 30px;
-}
-.container-banner .row .btn-banner .gabung:hover {
-  opacity: 0.8;
-}
-
-/* WHY */
-.why {
-  margin-top: 170px;
-}
-
-.why .row .col-lg-5 {
-  background-color: #ff7f2a;
-}
-
-.why .row .card {
-  border: none;
-  border-radius: 20px;
-}
-
-.devisi {
-  margin-left: 10px;
-}
-
-/* WHO */
-.anggota {
-  min-height: 400px;
-}
-
-/* BEST MOMENT */
-.best-moment {
-  min-height: 100px;
-}
-.best-moment-first {
-  min-height: 400px;
-}
-
-/* FOOTER */
-.footer {
-  margin-top: 200px;
-}
-.footer .col-footer {
-  min-height: 200px;
+.btn-banner-wrapper {
+  margin-top: 7em;
   /* background-color: #ff7f2a; */
 }
 
-.footer .logo {
-  margin-top: 50px;
+button.kenali {
+  padding: 10px 45px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background-color: #ff7f2a;
+  border: #ff7f2a;
+  color: #ffffff;
+}
+button.gabung {
+  padding: 10px 55px;
+  border-radius: 30px;
+  transition: 0.5s;
 }
 
-@media (max-width: 576px) {
-  .navbar-brand {
-    width: 15px !important;
+.btn-banner:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+/* WHY ? DEVISI */
+.card-devisi {
+  border-radius: 1em;
+}
+
+/* WHO US */
+
+.struktural .struktural-card .profil {
+  width: 13em;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.struktural .struktural-card .profil:hover {
+  width: 14em;
+  opacity: 1;
+  margin-top: -1em;
+  cursor: pointer;
+}
+
+.struktural .struktural-card .card a:hover {
+  opacity: 0.8;
+}
+
+.selengkapnya {
+  width: 15%;
+  padding: 10px 5px;
+  border-radius: 30px;
+  background-color: #ff7f2a;
+  transition: 0.5s;
+  border: none;
+  color: white;
+  margin: 0 auto;
+}
+.selengkapnya:hover {
+  opacity: 0.8;
+}
+
+/* BEST MOMENT */
+.best-moment .row .card-moment {
+  min-height: 50vh;
+  border: none;
+  border-radius: 1em;
+}
+
+/* Best Moment */
+
+/* Best Stories */
+.best-stories .card {
+  min-height: 25em;
+}
+
+@media (min-width: 1400px) {
+  section {
+    min-height: 60vh;
   }
-  .container-banner {
-    margin-top: 60px;
+  .banner {
+    margin-top: 13em;
   }
 
-  .container .text-banner h2 {
-    font-size: 26px !important;
-    margin-left: 10px;
+  section {
+    margin-top: 15em;
+  }
+}
+/* Untuk Handphone */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  section {
+    min-height: 100vh;
+  }
+  /* Banner */
+  .banner {
+    margin-top: 1em;
   }
 
-  .container-banner .row .upi {
-    letter-spacing: 0;
-    margin-left: 10px;
+  .upi {
+    letter-spacing: 0.15em;
   }
 
-  .container-banner .row .desc {
-    margin-left: 10px;
+  .btn-banner-wrapper {
+    margin-top: 3em;
+    /* background-color: #ff7f2a; */
   }
 
-  .container-banner .row .btn-banner {
-    margin-top: 30px;
+  .img-banner img {
+    width: 22em;
   }
 
-  .container-banner .row .btn-banner .kenali {
-    padding: 8px 25px;
-    margin-left: 10px;
+  /* WHO US */
+  section.struktural {
+    margin-top: 7em;
+  }
+  .selengkapnya {
+    width: 60%;
   }
 
-  .container-banner .row .btn-banner .gabung {
-    padding: 8px 25px;
-  }
-
-  .container-banner .row .banner-img img {
-    width: 300px;
-    margin-top: 25px;
-    margin-left: 10px;
-  }
+  /* Untuk tablet */
 }
