@@ -11,8 +11,8 @@ body {
   background-color: #fff5eb;
 }
 section {
-  min-height: 50vh;
-  margin-top: 5em;
+  min-height: 100vh;
+  margin-top: 8em;
   /* background-color: #ff7f2a; */
 }
 .card {
@@ -39,8 +39,20 @@ nav .container .collapse .btn-signin:hover {
   background-color: #ff7f2a;
   border: none;
 }
+.dropdown-menu-light {
+  border: none;
+  border-radius: 1em;
+}
+
+.dropdown-menu-light li a:hover {
+  background-color: white;
+  color: #ff7f2a;
+}
 
 /* Banner */
+.banner {
+  margin-top: 30em;
+}
 .kata {
   margin-top: 4em;
 }
@@ -123,6 +135,19 @@ button.gabung {
 .best-stories .card {
   min-height: 25em;
 }
+/* ======================================== */
+/* PAGE STRUKTURAL */
+.struktural-dokumentasi {
+  margin-top: 5em;
+}
+
+.struktural-dokumentasi .card {
+  border-radius: 1em 3em;
+  min-height: 55vh;
+}
+
+/* AKHIR PAGE STRUKTURAL */
+/* ========================================= */
 
 @media (min-width: 1400px) {
   section {
