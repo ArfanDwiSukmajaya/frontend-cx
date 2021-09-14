@@ -36,8 +36,11 @@ nav .container .collapse .btn-signin {
 }
 
 nav .container .collapse .btn-signin:hover {
-  background-color: #ff7f2a;
-  border: none;
+  opacity: 0.8;
+}
+
+nav ul li a.active {
+  color: #ff7f2a !important;
 }
 .dropdown-menu-light {
   border: none;
@@ -132,6 +135,36 @@ button.gabung {
 .best-stories .card {
   min-height: 25em;
 }
+
+/* Back TO top */
+#back-to-top {
+  position: fixed;
+  bottom: 3em;
+  right: 2em;
+  width: 3.5em;
+  /* background-color: #fff; */
+  /* color: #313943; */
+  /* border: none; */
+  border-radius: 5px;
+  /* padding: 1em; */
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  /* text-decoration: none; */
+  opacity: 0;
+}
+
+#back-to-top:hover {
+  background-color: #fff;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+}
+
 /* ======================================== */
 /* PAGE STRUKTURAL */
 .struktural-dokumentasi {
